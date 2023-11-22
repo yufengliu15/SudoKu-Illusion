@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 2%;
+}
+
+.background {
+    background-color: #10212a;
+    height: 100vh;
+    padding-top: 1px;
+}
+
+body {
+    overflow: hidden; /* Hide scrollbars */
+}
