@@ -2,16 +2,85 @@
     padding: 0;
     margin: 0;
 }
-
+/*https://coolors.co/39a2ae-47bfbd-55dbcb-65e0bf-75e4b3*/
 .title {
-    color: white;
+    color: #ffffff;
     text-align: center;
     font-size: 40px;
     margin-top: 2%;
 }
 
+.gameboard {
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    max-width: 630px;
+}
+
+.container {
+    margin: 2, 2, 2, 2;
+    border: 3px solid white;
+    display: grid;
+    align-items: center;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    /*grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%; */
+    max-width: 210px;
+
+}
+
+.tile {
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+    min-width: 67px;
+    min-height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.tile:nth-child(-n+3) {
+    /* Apply top border to the first row */
+    border-top: 1px solid white;
+}
+
+.tile:nth-child(3n+1) {
+    /* Apply left border to the first column */
+    border-left: 1px solid white;
+}
+
+.input {
+    border: 1px solid white;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    max-width: 270px;
+}
+
+.inputTile {
+    border: 1px solid white;
+    color:#000000;
+    min-width: 88px;
+    min-height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+
 .background {
-    background-color: #10212a;
+    background-color: #39A2AE;
     height: 100vh;
     padding-top: 1px;
 }
