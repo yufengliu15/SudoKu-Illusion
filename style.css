@@ -30,20 +30,27 @@
 
     /*grid-template-columns: 33% 33% 33%;
     grid-template-rows: 33% 33% 33%; */
-    max-width: 210px;
+    max-width: 240px;
+}
 
+.container:hover {
+    background-color: #55DBCB;
 }
 
 .tile {
     border-right: 1px solid white;
     border-bottom: 1px solid white;
-    min-width: 67px;
-    min-height: 72px;
+    min-width: 66px;
+    min-height: 65px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 40px;
     cursor: pointer;
+}
+
+.tile:hover {
+    background-color: #65E0BF;
 }
 
 .tile:nth-child(-n+3) {
@@ -66,7 +73,7 @@
     max-width: 270px;
 }
 
-.inputTile {
+.input-tile {
     border: 1px solid white;
     color:#000000;
     min-width: 88px;
@@ -76,6 +83,10 @@
     align-items: center;
     font-size: 50px;
     cursor: pointer;
+}
+
+.inputTile:hover {
+    background-color: #55DBCB;
 }
 
 
